@@ -1,0 +1,15 @@
+#game-button {
+    font: bold 60px/130px monospace;
+    margin: 35vh auto;
+    border-style: none;
+    padding: 14px;
+    border-radius: 80px;
+    background-color: rgb(166, 234, 255);
+    background: linear-gradient(rgb(166, 234, 255) 10%, rgb(14, 72, 189) 50%, rgb(166, 234, 255) 90%);
+    color: white;
+}
+ 
+ #game-button:hover {
+    background-color: rgb(50, 100, 200);
+    background: linear-gradient(rgb(0, 0, 0) 10%, rgb(14, 72, 189) 50%, rgb(0, 0, 0) 90%);
+}
