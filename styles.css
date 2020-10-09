@@ -2,7 +2,11 @@
    font: 32px monospace;
 }
 
-.game-area {
+body {
+   background-color: black;
+}
+
+#game-area {
    position:relative;
    background: rgb(59, 31, 218);
    background: linear-gradient(0deg, rgba(59, 31, 218, 1) 0%,
@@ -13,11 +17,14 @@
    margin: 0;
 }
 
-.game-start {
+#game-start {
    position: absolute;
    width: 30%;
-   background-color: rgb(235, 253, 153);
-   border-radius: 30px;
+   background-color: rgb(117, 247, 31);
+   color: rgb(60, 12, 114);
+   font-weight: bold;
+   font-size: 42px;
+   border-radius: 40px;
    top: 100px;
    left: 35%;
    z-index: 1;
@@ -25,7 +32,7 @@
    padding: 30px;
 }
 
-.game-score {
+#game-score {
    background-color: black;
    color: white;
    text-align: center;
@@ -35,17 +42,17 @@
    display: none;
 }
 
-.wizard {
+#wizard {
    z-index: 100;
    position: absolute;
    width: 82px;
    height: 100px;
-   background-image: url('./images/wizard.png');
+   background-color: black;
    background-size: cover;
 }
 
-.wizard-fire {
-   background-image: url('./images/wizard-fire.png');
+#wizard.wizard-fire {
+   background-color: grey;
    background-size: cover;
 }
 
@@ -74,7 +81,7 @@
    background-size: cover;
 }
 
-.game-over {
+#game-over {
    position: absolute;
    width: 50%;
    background-color: red;
