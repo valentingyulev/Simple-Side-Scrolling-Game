@@ -15,21 +15,46 @@ body {
    width: 100%;
    height: 93vh;
    margin: 0;
+   overflow: hidden;
+}
+
+#game-area.violet {
+   background: linear-gradient(0deg, rgba(59, 31, 218, 1) 0%,
+   rgb(102, 26, 189, 1) 35%,
+   rgba(59, 31, 218, 1) 100%);
+}
+
+#game-area.blue {
+   background: linear-gradient(0deg, rgb(12, 158, 255) 0%,
+   rgb(73, 243, 255) 35%,
+   rgb(23, 143, 255) 100%);
+}
+
+#game-area.black {
+   background: linear-gradient(0deg, rgb(0, 0, 0) 0%,
+   rgb(129, 0, 0) 35%,
+   rgb(61, 15, 15) 100%);
 }
 
 #game-start {
    position: absolute;
    width: 30%;
    background-color: rgb(117, 247, 31);
-   color: rgb(60, 12, 114);
+   color: rgb(44, 58, 255);
+   border: none;
    font-weight: bold;
    font-size: 42px;
    border-radius: 40px;
-   top: 100px;
+   top: 200px;
    left: 35%;
-   z-index: 1;
+   z-index: 101;
    text-align: center;
-   padding: 30px;
+   padding: 25px;
+}
+
+#game-start:hover {
+   background-color: yellow;
+   cursor: pointer;
 }
 
 #game-score {
@@ -45,14 +70,16 @@ body {
 #wizard {
    z-index: 100;
    position: absolute;
-   width: 82px;
+   width: 200px;
    height: 100px;
-   background-color: black;
+   background-image: url('./images/robocop3.png');
+   /* background-color: black; */
    background-size: cover;
 }
 
 #wizard.wizard-fire {
-   background-color: grey;
+   background-image: url('./images/robocop-fire.png');
+   /* background-color: grey; */
    background-size: cover;
 }
 
@@ -83,11 +110,16 @@ body {
 
 #game-over {
    position: absolute;
-   width: 50%;
+   width: 30%;
    background-color: red;
-   top: 100px;
-   left: 25%;
-   z-index: 1;
+   color: lightblue;
+   border: none;
+   font-weight: bold;
+   font-size: 42px;
+   border-radius: 40px;
+   top: 400px;
+   left: 35%;
+   z-index: 101;
    text-align: center;
-   padding: 30px;
+   padding: 25px;
 }
