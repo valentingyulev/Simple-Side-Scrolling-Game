@@ -1,125 +1,133 @@
 * {
-   font: 32px monospace;
+	font: 32px monospace;
 }
 
 body {
-   background-color: black;
+	background-color: black;
 }
 
 #game-area {
-   position:relative;
-   background: rgb(59, 31, 218);
-   background: linear-gradient(0deg, rgba(59, 31, 218, 1) 0%,
-               rgb(102, 26, 189, 1) 35%,
-               rgba(59, 31, 218, 1) 100%);
-   width: 100%;
-   height: 93vh;
-   margin: 0;
-   overflow: hidden;
+	position: relative;
+	background: rgb(59, 31, 218);
+	background: linear-gradient(
+		0deg,
+		rgba(59, 31, 218, 1) 0%,
+		rgb(102, 26, 189, 1) 35%,
+		rgba(59, 31, 218, 1) 100%
+	);
+	width: 100%;
+	height: 93vh;
+	margin: 0;
+	overflow: hidden;
 }
 
 #game-area.violet {
-   background: linear-gradient(0deg, rgba(59, 31, 218, 1) 0%,
-   rgb(102, 26, 189, 1) 35%,
-   rgba(59, 31, 218, 1) 100%);
+	background: linear-gradient(
+		0deg,
+		rgba(59, 31, 218, 1) 0%,
+		rgb(102, 26, 189, 1) 35%,
+		rgba(59, 31, 218, 1) 100%
+	);
 }
 
 #game-area.blue {
-   background: linear-gradient(0deg, rgb(12, 158, 255) 0%,
-   rgb(73, 243, 255) 35%,
-   rgb(23, 143, 255) 100%);
+	background: linear-gradient(
+		0deg,
+		rgb(12, 158, 255) 0%,
+		rgb(73, 243, 255) 35%,
+		rgb(23, 143, 255) 100%
+	);
 }
 
 #game-area.black {
-   background: linear-gradient(0deg, rgb(0, 0, 0) 0%,
-   rgb(129, 0, 0) 35%,
-   rgb(61, 15, 15) 100%);
+	background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(129, 0, 0) 35%, rgb(61, 15, 15) 100%);
 }
 
 #game-start {
-   position: absolute;
-   width: 30%;
-   background-color: rgb(117, 247, 31);
-   color: rgb(44, 58, 255);
-   border: none;
-   font-weight: bold;
-   font-size: 42px;
-   border-radius: 40px;
-   top: 200px;
-   left: 35%;
-   z-index: 101;
-   text-align: center;
-   padding: 25px;
+	position: absolute;
+	width: 30%;
+	background-color: rgb(117, 247, 31);
+	color: rgb(44, 58, 255);
+	border: none;
+	font-weight: bold;
+	font-size: 42px;
+	border-radius: 40px;
+	top: 200px;
+	left: 35%;
+	z-index: 101;
+	text-align: center;
+	padding: 25px;
 }
 
 #game-start:hover {
-   background-color: yellow;
-   cursor: pointer;
+	background-color: yellow;
+	cursor: pointer;
 }
 
 #game-score {
-   background-color: black;
-   color: white;
-   text-align: center;
+	background-color: black;
+	color: white;
+	text-align: center;
 }
 
 .hide {
-   display: none;
+	display: none;
 }
 
 #wizard {
-   z-index: 100;
-   position: absolute;
-   width: 200px;
-   height: 100px;
-   background-image: url('./images/robocop3.png');
-   /* background-color: black; */
-   background-size: cover;
+	z-index: 100;
+	position: absolute;
+	width: 80px;
+	height: 100px;
+	background-size: cover;
+	background-image: url('./images/wizard.png');
+	/* background-color: black; */
+	background-size: cover;
 }
 
 #wizard.wizard-fire {
-   background-image: url('./images/robocop-fire.png');
-   /* background-color: grey; */
-   background-size: cover;
+	background-image: url('./images/wizard-fire.png');
+	/* background-color: grey; */
+	background-size: cover;
 }
 
 .fire-ball {
-   position: absolute;
-   width: 40px;
-   height: 40px;
-   background-image: url('./images/fire-ball.png');
-   background-size: cover;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-image: url('./images/fire-ball.png');
+	background-size: cover;
 }
 
 .cloud {
-   z-index: 0;
-   position: absolute;
-   width: 200px;
-   height: 200px;
-   background-image: url('./images/cloud.png');
-   background-size: cover;
+	z-index: 0;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-image: url('./images/cloud.png');
+	background-size: cover;
 }
 
 .bug {
-   position: absolute;
-   width: 60px;
-   height: 60px;
-   background-image: url('./images/bug.png');
-   background-size: cover;
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background-image: url('./images/bug.png');
+	background-size: cover;
 }
 
 #game-over {
-   position: absolute;
-   width: 30%;
-   background-color: red;
-   color: lightblue;
-   border: none;
-   font-weight: bold;
-   font-size: 42px;
-   border-radius: 40px;
-   top: 400px;
-   left: 35%;
-   z-index: 101;
-   text-align: center;
-   padding: 25px;
+	position: absolute;
+	width: 30%;
+	background-color: red;
+	color: lightblue;
+	border: none;
+	font-weight: bold;
+	font-size: 42px;
+	border-radius: 40px;
+	top: 400px;
+	left: 35%;
+	z-index: 101;
+	text-align: center;
+	padding: 25px;
 }
